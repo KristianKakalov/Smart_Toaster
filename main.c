@@ -12,7 +12,7 @@ uint8_t readUChar(uint8_t* dataBuffer, int pointer) {
         //read 1 byte from the buffer with starting point "pointer"
         return (uint8_t)(dataBuffer[pointer]);
 }
-uint16_t readUShort(uint8_t** dataBuffer, int pointer) {
+uint16_t readUShort(uint8_t* dataBuffer, int pointer) {
         //read 2 bytes from the buffer with starting point "pointer"
         return (uint16_t)(dataBuffer[pointer] | dataBuffer[pointer + 1] << 8);
 }
